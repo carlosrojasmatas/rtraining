@@ -1,0 +1,232 @@
+x <- 1
+print x
+print(x)
+x
+msg <- "hello"
+msg
+print(msg)
+x <- #this is a comment
+;
+x <- 1:20
+x
+x[3]
+library(package='swirl')
+swirl()
+exit
+bye
+bye()
+exit
+exit()
+quit()
+swirl()
+library.load("swirl")
+library(package='swirl')
+swirl()
+5 +7
+x <- 5+ 7
+x
+y <- x - 3
+y
+z <- c(1.1,9.3.14)
+z <- c(1.1,9,3.14)
+?c
+z
+c(z,555,z)
+z * 2 + 100
+my_sqrt <- abs(sqrt(z))
+my_sqrt <- abs(sqrt(z-1))
+my_sqrt <- sqrt(z-1)
+my_sqrt
+my_div <- z / my_sqrt
+my_div
+c(1,2,3,4) + c(0,10)
+c(1,2,3,4) + c(0,10,100)
+z * 2 + 1000
+my_div
+bye()
+exit
+exit()
+quit()
+bye()
+exit()
+quit()
+install.packages("KernSmooth")
+library(KernSmooth)
+exist()
+quit()
+abobe10 <- function(x) {}
+abobe10 <- function(x) {#
+    use <- x > 10#
+}
+abobe10 <- function(x) {#
+    use <- x > 10#
+    x[use]#
+}
+abobe10(c(1,40,3,50,22,4,11))
+columnmean <- function(x) {#
+   nc <- ncol(x)#
+   means <- numeric(nc)#
+   for(i in 1:nc){#
+     means[i] <- mean(y[,i])#
+   }#
+   means#
+}
+airquality <- matrix(1:6,2,3)
+airquality
+columnmean(airquality)
+columnmean <- function(x) {#
+   nc <- ncol(x)#
+   means <- numeric(nc)#
+   for(i in 1:nc){#
+     means[i] <- mean(x[,i])#
+   }#
+   means#
+}
+columnmean(airquality)
+swirl()
+library(swirl)
+swirl()
+getwd()
+ls()
+x <- 9
+ls()
+x
+list.files()
+ls()
+list.files
+?list.files
+args(list.files())
+args(list.files)
+old.dir <- ls()
+old.dir <- getwd()
+dir.create("testdir")
+setdw("testdir")
+setwd("testdir")
+getwd()
+file.create("mytest.R")
+list.files()
+file.exists("mytest.R")
+file.info("mytest.R")
+file.rename("mytest.R","mytest2.R")
+file.copy("mytest2.R","mytest3.R")
+file.path("mytest3.R")
+args(file.path)
+file.path("folder1","folder2")
+?dir.create
+dir.create(file.path("testdir2","testdir3"))
+dir.create(file.path("testdir2","testdir3"),recursive=TRUE)
+unlink("testdir2",TRUE)
+setwd()
+setwd(old.dir)
+unlink("testdir",TRUE)
+bye()
+exit
+quit
+quit()
+y <- 10
+f <- function(x){}
+f <- function(x){#
+       y <- 2#
+       y^2 + g(x)#
+}
+g <- function(x){#
+   x * y#
+}
+f(3)
+getwd
+getwd()
+setwd("Development/workspaces/r/week2/")
+content <- read.csv("specdata/001.csv")
+content
+content[1,"nitrate"]
+content[,"nitrate"]
+content[,"nitrate"]
+content
+content[,"nitrate"]
+nit <- content[,"nitrate"]
+nit
+nit[complete.cases[nit]]
+nit[complete.cases(nit)]
+mean(nit[complete.cases[nit]],na.rm=TRUE)
+mean(nit[complete.cases[nit]])
+mean(nit[complete.cases(nit)])
+mean(nit,na.rm=TRUE)
+x <- 1:10
+y <- 4:33
+c <- 55:99
+x
+y
+c
+mean(c)
+mean(y)
+mean(x)
+mean(c(mean(c),mean(y),mean(x))
+totmean <- mean(c(mean(c),mean(y),mean(x))
+totmean <- mean(c(mean(c),mean(y),mean(x)))
+totmean
+h <- mean(c(1:10,4:33,55:99))
+h
+mat <- c(1:10,4:33,55:99)
+mat
+mean(mat)
+s <- 1:10
+x
+y
+c
+s <- c(3,4)
+s
+s <- c(s,c)
+s
+s <- c(s,x)
+s
+s <- c(s,y)
+s
+mean(s)
+s <- c(x)
+s
+s <- c(s,y)
+s
+s <- c(s,c)
+s
+mean(s)
+s
+s <- []
+s <- 0
+s
+s <- c(s,x)
+s
+s <- numeric(0)
+s
+s <- c(s,c)
+s
+df <- data.frame(c(2,3),colnames=c("id","name"))
+df
+df <- data.frame(c(2,3),col.names=c("id","name"))
+df
+df <- data.frame(names=1:10,ages=2:8)
+df <- data.frame(names=c(1:10),ages=c(2:8))
+df <- data.frame(names=c(1:10),ages=c(20:30))
+df <- data.frame(names=c(1:10),ages=c(21:30))
+df
+length(df)
+complete2 <- function(directory,id = 1:332){#
+  resolvename <- function(name) {#
+    fname <- if( name<10) {#
+      paste("/00",name,sep="")} #
+    else if (name < 100) {#
+      paste("/0",name,sep = "")}#
+    else {#
+      name#
+    }  #
+  }#
+  for( i in seq_along(id)){#
+    name <- resolvename(id[i])#
+    fullName <- paste(directory,name,".csv",sep = "")#
+    content <- read.csv(fullName)#
+    for(crow in content){#
+      print(crow)#
+    }  #
+  }#
+}
+complete2("specdata",1)
+z
